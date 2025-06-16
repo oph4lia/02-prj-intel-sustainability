@@ -8,136 +8,281 @@
 </head>
 <body>
 
-  <!-- Header / Hero Section -->
+  <!-- Navigation Bar -->
   <header>
-    <div>
-      <!-- Ask Copilot to teach you about `.svg` 🙂 -->
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
-      <!-- Main Heading -->
-      <h1>
-        Sustainability Through the Ages
-      </h1>
-
-      <!-- Subheading / Description -->
-      <p>
-        Explore Intel's journey through time, discovering how our commitment
-        to innovation has shaped a more sustainable future for technology 
-        and our planet.
-      </p>
-    </div>
+    <nav class="navbar">
+      <div class="navbar-logo">
+        <!-- Intel Logo -->
+        <img src="img/intel-header-logo.svg" alt="Intel Logo" />
+      </div>
+      <!-- Hamburger menu for mobile -->
+      <input type="checkbox" id="menu-toggle" />
+      <label for="menu-toggle" class="navbar-hamburger" aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+      <div class="navbar-links">
+        <a href="#home">Home</a>
+        <a href="#timeline">Sustainability Timeline</a>
+        <a href="#learn">Learn More</a>
+      </div>
+    </nav>
   </header>
 
-  <!-- Timeline Cards Section -->
-  <section>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <!-- Intel Logo (optional, can remove if redundant) -->
+    <!-- <img src="img/intel-header-logo.svg" alt="Intel Logo" /> -->
+    <h1>Sustainability Through the Ages</h1>
+    <p>
+      Explore Intel's journey through time, discovering how our commitment
+      to innovation has shaped a more sustainable future for technology 
+      and our planet.
+    </p>
+    <a href="#timeline" class="cta-btn">View Timeline</a>
+  </section>
 
-    <!-- Card 1: 1968 -->
-    <div>
-      <h2>1968</h2>
-      <h3>Intel Founded</h3>
-      <img src="img/1.jpg" alt="Placeholder Image" />
-      <p>
-        Robert Noyce and Gordon Moore rename the newly formed company 
-        NM Electronics to Intel Corporation, laying the foundation for 
-        decades of technological innovation.
-      </p>
+  <!-- Timeline Section -->
+  <!-- Update timeline cards for flip effect -->
+  <section class="timeline-section" id="timeline">
+    <div class="timeline-scrollbox">
+      <!-- Card 1: 1968 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>1968</h2>
+            <h3>Intel Founded</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_04_29 AM.png" alt="Intel Founded" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>1968</h2>
+            <h3>Intel Founded</h3>
+            <p>
+              Robert Noyce and Gordon Moore rename the newly formed company 
+              NM Electronics to Intel Corporation, laying the foundation for 
+              decades of technological innovation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 2: 1971 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>1971</h2>
+            <h3>First Microprocessor</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_06_32 AM.png" alt="First Microprocessor" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>1971</h2>
+            <h3>First Microprocessor</h3>
+            <p>
+              Intel debuts the 4004, the world's first commercial microprocessor, 
+              igniting the microprocessor revolution and propelling the future 
+              of computing devices.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 3: 1978 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>1978</h2>
+            <h3>8086 Processor</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_08_17 AM.png" alt="8086 Processor" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>1978</h2>
+            <h3>8086 Processor</h3>
+            <p>
+              Launch of the 8086 processor, establishing the x86 architecture 
+              that drives countless PCs and servers in the modern era.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 4: 1985 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>1985</h2>
+            <h3>386 Processor</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_04_35 AM.png" alt="386 Processor" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>1985</h2>
+            <h3>386 Processor</h3>
+            <p>
+              Intel introduces the 386 processor with 32-bit architecture, 
+              ushering in a new era of performance and multitasking for 
+              personal computers.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 5: 2006 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>2006</h2>
+            <h3>Peak GHG Emissions</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_09_32 AM.png" alt="Peak GHG Emissions" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>2006</h2>
+            <h3>Peak GHG Emissions</h3>
+            <p>
+              This year marks Intel's highest annual greenhouse gas emissions 
+              for operations. Over subsequent years, Intel invests heavily in 
+              chemical abatement, renewable energy, and energy-efficient 
+              manufacturing to reverse this trend.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 6: 2020 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>2020</h2>
+            <h3>RISE Strategy</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_10_50 AM.png" alt="RISE Strategy" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>2020</h2>
+            <h3>RISE Strategy</h3>
+            <p>
+              Intel launches its RISE (Responsible, Inclusive, Sustainable, 
+              Enabling) strategy and 2030 goals, aiming to drive industry-wide 
+              progress on climate action, water stewardship, and waste reduction.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 7: 2022 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>2022</h2>
+            <h3>Net-Zero By 2040</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_11_47 AM.png" alt="Net-Zero By 2040" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>2022</h2>
+            <h3>Net-Zero By 2040</h3>
+            <p>
+              Intel announces its commitment to achieve net-zero greenhouse 
+              gas emissions (Scope 1 and 2) across its global operations 
+              by 2040, building on years of environmental initiatives.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 8: 2023 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>2023</h2>
+            <h3>Renewable Electricity</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_14_10 AM.png" alt="Renewable Electricity" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>2023</h2>
+            <h3>Renewable Electricity</h3>
+            <p>
+              The company achieves 99% renewable electricity usage worldwide, 
+              helping to drastically lower carbon emissions and driving progress 
+              toward Intel's long-term sustainability goals.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- Card 9: 2024 -->
+      <div class="timeline-card" tabindex="0">
+        <div class="timeline-card-inner">
+          <div class="timeline-card-front">
+            <h2>2024</h2>
+            <h3>Sustainability Summit</h3>
+            <img src="img/ChatGPT Image Jun 16, 2025, 02_15_52 AM.png" alt="Sustainability Summit" />
+          </div>
+          <div class="timeline-card-back">
+            <h2>2024</h2>
+            <h3>Sustainability Summit</h3>
+            <p>
+              Intel hosts its first Sustainability Summit, uniting suppliers, 
+              government officials, and industry leaders to collaborate on 
+              next-generation sustainable semiconductor manufacturing.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <p style="text-align:center; margin-top:8px;">Click a card image to flip and see more!</p>
+  </section>
 
-    <!-- Card 2: 1971 -->
-    <div>
-      <h2>1971</h2>
-      <h3>First Microprocessor</h3>
-      <img src="img/2.jpg" alt="Placeholder Image" />
-      <p>
-        Intel debuts the 4004, the world's first commercial microprocessor, 
-        igniting the microprocessor revolution and propelling the future 
-        of computing devices.
-      </p>
-    </div>
-
-    <!-- Card 3: 1978 -->
-    <div>
-      <h2>1978</h2>
-      <h3>8086 Processor</h3>
-      <img src="img/3.jpg" alt="Placeholder Image" />
-      <p>
-        Launch of the 8086 processor, establishing the x86 architecture 
-        that drives countless PCs and servers in the modern era.
-      </p>
-    </div>
-
-    <!-- Card 4: 1985 -->
-    <div>
-      <h2>1985</h2>
-      <h3>386 Processor</h3>
-      <img src="img/4.jpg" alt="Placeholder Image" />
-      <p>
-        Intel introduces the 386 processor with 32-bit architecture, 
-        ushering in a new era of performance and multitasking for 
-        personal computers.
-      </p>
-    </div>
-
-    <!-- Card 5: 2006 -->
-    <div>
-      <h2>2006</h2>
-      <h3>Peak GHG Emissions</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        This year marks Intel's highest annual greenhouse gas emissions 
-        for operations. Over subsequent years, Intel invests heavily in 
-        chemical abatement, renewable energy, and energy-efficient 
-        manufacturing to reverse this trend.
-      </p>
-    </div>
-
-    <!-- Card 6: 2020 -->
-    <div>
-      <h2>2020</h2>
-      <h3>RISE Strategy</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        Intel launches its RISE (Responsible, Inclusive, Sustainable, 
-        Enabling) strategy and 2030 goals, aiming to drive industry-wide 
-        progress on climate action, water stewardship, and waste reduction.
-      </p>
-    </div>
-
-    <!-- Card 7: 2022 -->
-    <div>
-      <h2>2022</h2>
-      <h3>Net-Zero By 2040</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        Intel announces its commitment to achieve net-zero greenhouse 
-        gas emissions (Scope 1 and 2) across its global operations 
-        by 2040, building on years of environmental initiatives.
-      </p>
-    </div>
-
-    <!-- Card 8: 2023 -->
-    <div>
-      <h2>2023</h2>
-      <h3>Renewable Electricity</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        The company achieves 99% renewable electricity usage worldwide, 
-        helping to drastically lower carbon emissions and driving progress 
-        toward Intel's long-term sustainability goals.
-      </p>
-    </div>
-
-    <!-- Card 9: 2024 -->
-    <div>
-      <h2>2024</h2>
-      <h3>Sustainability Summit</h3>
-      <img src="https://placehold.co/250x100" alt="Placeholder Image" />
-      <p>
-        Intel hosts its first Sustainability Summit, uniting suppliers, 
-        government officials, and industry leaders to collaborate on 
-        next-generation sustainable semiconductor manufacturing.
-      </p>
+  <!-- Educational Section: Sustainability Focus Areas -->
+  <section class="education-section" id="learn">
+    <h2 style="text-align:center; margin-bottom:24px;">Sustainability Focus Areas</h2>
+    <div class="education-grid">
+      <!-- Card 1 -->
+      <div class="education-card" tabindex="0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Emoji_u1f50c.svg/2048px-Emoji_u1f50c.svg.png" alt="Energy Efficiency" />
+        <h4>Energy Efficiency</h4>
+        <p>Intel designs products and processes to use less energy and reduce environmental impact.</p>
+      </div>
+      <!-- Card 2 -->
+      <div class="education-card" tabindex="0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Emoji_u1f4a7.svg/2048px-Emoji_u1f4a7.svg.png" alt="Water Stewardship" />
+        <h4>Water Stewardship</h4>
+        <p>Intel conserves water and restores water to local communities through innovative projects.</p>
+      </div>
+      <!-- Card 3 -->
+      <div class="education-card" tabindex="0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Emoji_u1f5d1.svg/2048px-Emoji_u1f5d1.svg.png" alt="Waste Reduction" />
+        <h4>Waste Reduction</h4>
+        <p>Intel reduces, reuses, and recycles materials to minimize waste sent to landfills.</p>
+      </div>
+      <!-- Card 4 -->
+      <div class="education-card" tabindex="0">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Emoji_u26c5.svg/2048px-Emoji_u26c5.svg.png" alt="Climate Action" />
+        <h4>Climate Action</h4>
+        <p>Intel is committed to reducing greenhouse gas emissions and achieving net-zero operations.</p>
+      </div>
     </div>
   </section>
-  <p>Scroll to view timeline | Hover over cards to learn more!</p>
+
+  <!-- Footer Section -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-links">
+        <a href="#">Contact Us</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <div class="footer-social">
+        <!-- Placeholder social icons using Unicode for simplicity -->
+        <a href="#" aria-label="Twitter">&#x1F426;</a>
+        <a href="#" aria-label="LinkedIn">&#x1F465;</a>
+        <a href="#" aria-label="Facebook">&#x1F464;</a>
+      </div>
+    </div>
+    <div class="footer-tagline">Intel: Engineering a Sustainable Future</div>
+  </footer>
+
+  <!-- Add this script at the end of the body to allow flipping each timeline card independently on click -->
+  <script>
+// This script lets you click anywhere on a timeline card to flip it and see the back.
+// If you click the card again, it will flip back to the front.
+// Each card can be flipped or unflipped independently.
+document.querySelectorAll('.timeline-card').forEach(function(card) {
+  card.addEventListener('click', function(e) {
+    // Prevent the click from bubbling up to parent elements
+    e.stopPropagation();
+    // Toggle the 'flipped' class on this card only
+    card.classList.toggle('flipped');
+  });
+});
+  </script>
 </body>
 </html>
