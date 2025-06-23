@@ -4,28 +4,43 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <!-- Navigation Bar -->
   <header>
-    <nav class="navbar">
-      <div class="navbar-logo">
-        <!-- Intel Logo -->
-        <img src="img/intel-header-logo.svg" alt="Intel Logo" />
-      </div>
-      <!-- Hamburger menu for mobile -->
-      <input type="checkbox" id="menu-toggle" />
-      <label for="menu-toggle" class="navbar-hamburger" aria-label="Open navigation menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-      <div class="navbar-links">
-        <a href="#home">Home</a>
-        <a href="#timeline">Sustainability Timeline</a>
-        <a href="#learn">Learn More</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#home">
+          <img src="img/Intel-logo-2022.png" alt="Intel Logo" height="40" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#timeline">Sustainability Timeline</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#impact">Impact Areas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#learn">Focus Areas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#newsletter">Newsletter</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
   </header>
@@ -219,70 +234,310 @@
         </div>
       </div>
     </div>
-    <p style="text-align:center; margin-top:8px;">Click a card image to flip and see more!</p>
+  </section>
+
+<!-- 3-Column Content Section -->
+  <section class="py-5 bg-light" id="impact">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Column 1 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-lightbulb text-primary mb-3" style="font-size: 2rem;"></i>
+              <h3 class="card-title">RISE Strategy</h3>
+              <p class="card-text">
+                Under its RISE (Responsible, Inclusive, Sustainable, Enabling) strategy, 
+                Intel sets ambitious 2030 goals, including driving industry-wide 
+                progress on climate action, water stewardship, and waste reduction.
+              </p>
+              <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-shield-check text-success mb-3" style="font-size: 2rem;"></i>
+              <h3 class="card-title">Commitment</h3>
+              <p class="card-text">
+                In 2022, Intel pledged to achieve net-zero greenhouse gas emissions 
+                (Scope 1 and 2) by 2040. This commitment builds on decades of 
+                environmental initiatives and partnerships across the semiconductor 
+                industry.
+              </p>
+              <a href="#" class="btn btn-success">Learn More</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center">
+              <i class="bi bi-recycle text-info mb-3" style="font-size: 2rem;"></i>
+              <h3 class="card-title">Water &amp; Waste</h3>
+              <p class="card-text">
+                Intel conserves billions of gallons of water annually and 
+                collaborates with local communities to restore watersheds.
+                Intel also upcycles and recycles materials to reduce waste and 
+                advance a circular economy.
+              </p>
+              <a href="#" class="btn btn-info text-white">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- Educational Section: Sustainability Focus Areas -->
   <section class="education-section" id="learn">
     <h2 style="text-align:center; margin-bottom:24px;">Sustainability Focus Areas</h2>
-    <div class="education-grid">
-      <!-- Card 1 -->
-      <div class="education-card" tabindex="0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Emoji_u1f50c.svg/2048px-Emoji_u1f50c.svg.png" alt="Energy Efficiency" />
-        <h4>Energy Efficiency</h4>
-        <p>Intel designs products and processes to use less energy and reduce environmental impact.</p>
+    <!-- Accordion for mobile -->
+    <div class="d-block d-md-none">
+      <div class="accordion" id="focusAreasAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Emoji_u1f50c.svg/2048px-Emoji_u1f50c.svg.png" alt="Energy Efficiency" style="width:32px;height:32px;margin-right:12px;"> Energy Efficiency
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#focusAreasAccordion">
+            <div class="accordion-body">
+              Intel designs products and processes to use less energy and reduce environmental impact.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Emoji_u1f4a7.svg/2048px-Emoji_u1f4a7.svg.png" alt="Water Stewardship" style="width:32px;height:32px;margin-right:12px;"> Water Stewardship
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#focusAreasAccordion">
+            <div class="accordion-body">
+              Intel conserves water and restores water to local communities through innovative projects.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Emoji_u1f5d1.svg/2048px-Emoji_u1f5d1.svg.png" alt="Waste Reduction" style="width:32px;height:32px;margin-right:12px;"> Waste Reduction
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#focusAreasAccordion">
+            <div class="accordion-body">
+              Intel reduces, reuses, and recycles materials to minimize waste sent to landfills.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="headingFour">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Emoji_u26c5.svg/2048px-Emoji_u26c5.svg.png" alt="Climate Action" style="width:32px;height:32px;margin-right:12px;"> Climate Action
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#focusAreasAccordion">
+            <div class="accordion-body">
+              Intel is committed to reducing greenhouse gas emissions and achieving net-zero operations.
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- Card 2 -->
-      <div class="education-card" tabindex="0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Emoji_u1f4a7.svg/2048px-Emoji_u1f4a7.svg.png" alt="Water Stewardship" />
-        <h4>Water Stewardship</h4>
-        <p>Intel conserves water and restores water to local communities through innovative projects.</p>
+    </div>
+    <!-- Carousel for desktop -->
+    <div id="focusAreasCarousel" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#focusAreasCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Energy Efficiency"></button>
+        <button type="button" data-bs-target="#focusAreasCarousel" data-bs-slide-to="1" aria-label="Water Stewardship"></button>
+        <button type="button" data-bs-target="#focusAreasCarousel" data-bs-slide-to="2" aria-label="Waste Reduction"></button>
+        <button type="button" data-bs-target="#focusAreasCarousel" data-bs-slide-to="3" aria-label="Climate Action"></button>
       </div>
-      <!-- Card 3 -->
-      <div class="education-card" tabindex="0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Emoji_u1f5d1.svg/2048px-Emoji_u1f5d1.svg.png" alt="Waste Reduction" />
-        <h4>Waste Reduction</h4>
-        <p>Intel reduces, reuses, and recycles materials to minimize waste sent to landfills.</p>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="education-card mx-auto" style="max-width:400px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Emoji_u1f50c.svg/2048px-Emoji_u1f50c.svg.png" alt="Energy Efficiency" style="width:60px;height:60px;" />
+            <h4>Energy Efficiency</h4>
+            <p>Intel designs products and processes to use less energy and reduce environmental impact.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="education-card mx-auto" style="max-width:400px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Emoji_u1f4a7.svg/2048px-Emoji_u1f4a7.svg.png" alt="Water Stewardship" style="width:60px;height:60px;" />
+            <h4>Water Stewardship</h4>
+            <p>Intel conserves water and restores water to local communities through innovative projects.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="education-card mx-auto" style="max-width:400px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Emoji_u1f5d1.svg/2048px-Emoji_u1f5d1.svg.png" alt="Waste Reduction" style="width:60px;height:60px;" />
+            <h4>Waste Reduction</h4>
+            <p>Intel reduces, reuses, and recycles materials to minimize waste sent to landfills.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="education-card mx-auto" style="max-width:400px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Emoji_u26c5.svg/2048px-Emoji_u26c5.svg.png" alt="Climate Action" style="width:60px;height:60px;" />
+            <h4>Climate Action</h4>
+            <p>Intel is committed to reducing greenhouse gas emissions and achieving net-zero operations.</p>
+          </div>
+        </div>
       </div>
-      <!-- Card 4 -->
-      <div class="education-card" tabindex="0">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Emoji_u26c5.svg/2048px-Emoji_u26c5.svg.png" alt="Climate Action" />
-        <h4>Climate Action</h4>
-        <p>Intel is committed to reducing greenhouse gas emissions and achieving net-zero operations.</p>
+      <button class="carousel-control-prev" type="button" data-bs-target="#focusAreasCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#focusAreasCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Subscription Form Section -->
+  <section class="py-5 bg-primary text-white" id="newsletter">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6 text-center">
+          <h2 class="mb-4">Stay Updated on Intel's Sustainability Journey</h2>
+          <p class="mb-4">Subscribe to our newsletter for the latest updates on Intel's environmental initiatives and sustainability progress.</p>
+          <form class="row g-3 justify-content-center" role="form" autocomplete="on">
+            <div class="col-md-8">
+              <label for="newsletter-email" class="visually-hidden">Email address</label>
+              <input type="email" id="newsletter-email" class="form-control form-control-lg" placeholder="Enter your email address" required autocomplete="email">
+            </div>
+            <div class="col-md-4">
+              <button type="submit" class="btn btn-light btn-lg w-100" aria-label="Subscribe to newsletter">Subscribe</button>
+            </div>
+          </form>
+          <small class="text-light mt-3 d-block">We respect your privacy. Unsubscribe at any time.</small>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- Footer Section -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-links">
-        <a href="#">Contact Us</a>
-        <a href="#">Privacy Policy</a>
+  <footer class="bg-dark text-white py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <img src="img/Intel-logo-2022.png" alt="Intel Logo" height="40" class="mb-3" />
+          <p>Intel: Engineering a Sustainable Future</p>
+        </div>
+        <div class="col-lg-8 d-flex flex-column align-items-center justify-content-center">
+          <!-- Quick Links: horizontal -->
+          <ul class="list-unstyled d-flex flex-wrap justify-content-center mb-3" style="gap: 1.5rem;">
+            <li><a href="#" class="text-decoration-none">Contact Us</a></li>
+            <li><a href="#" class="text-decoration-none">Privacy Policy</a></li>
+            <li><a href="#" class="text-decoration-none">Terms of Use</a></li>
+            <li><a href="#" class="text-decoration-none">Contact</a></li>
+          </ul>
+          <!-- Connect With Us: horizontal below -->
+          <div class="d-flex gap-3 justify-content-center">
+            <a href="#" class="text-decoration-none" aria-label="Twitter">
+              <i class="bi bi-twitter fs-4"></i>
+            </a>
+            <a href="#" class="text-decoration-none" aria-label="LinkedIn">
+              <i class="bi bi-linkedin fs-4"></i>
+            </a>
+            <a href="#" class="text-decoration-none" aria-label="Facebook">
+              <i class="bi bi-facebook fs-4"></i>
+            </a>
+            <a href="#" class="text-decoration-none" aria-label="YouTube">
+              <i class="bi bi-youtube fs-4"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div class="footer-social">
-        <!-- Placeholder social icons using Unicode for simplicity -->
-        <a href="#" aria-label="Twitter">&#x1F426;</a>
-        <a href="#" aria-label="LinkedIn">&#x1F465;</a>
-        <a href="#" aria-label="Facebook">&#x1F464;</a>
+      <hr class="my-4">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="mb-0">&copy; 2024 Intel Corporation. All rights reserved.</p>
+        </div>
+        <div class="col-md-6 text-md-end">
+          <a href="#" class="text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-decoration-none me-3">Terms of Use</a>
+          <a href="#" class="text-decoration-none">Cookie Policy</a>
+        </div>
       </div>
     </div>
-    <div class="footer-tagline">Intel: Engineering a Sustainable Future</div>
   </footer>
-
-  <!-- Add this script at the end of the body to allow flipping each timeline card independently on click -->
+  
+  <!-- Bootstrap JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  
+  <!-- Auto-Detect Language & Adjust RTL/LTR Layout -->
   <script>
-// This script lets you click anywhere on a timeline card to flip it and see the back.
-// If you click the card again, it will flip back to the front.
-// Each card can be flipped or unflipped independently.
-document.querySelectorAll('.timeline-card').forEach(function(card) {
-  card.addEventListener('click', function(e) {
-    // Prevent the click from bubbling up to parent elements
-    e.stopPropagation();
-    // Toggle the 'flipped' class on this card only
-    card.classList.toggle('flipped');
-  });
-});
+    // List of RTL language codes
+    const rtlLangs = ['ar', 'he', 'fa', 'ur'];
+    function updateDirByLang() {
+      const html = document.documentElement;
+      // Get the language code (first two letters)
+      const lang = (html.lang || '').slice(0,2).toLowerCase();
+      if (rtlLangs.includes(lang)) {
+        html.setAttribute('dir', 'rtl');
+      } else {
+        html.setAttribute('dir', 'ltr');
+      }
+    }
+    // Run on load
+    updateDirByLang();
+    // Observe changes to the lang attribute (e.g., by Google Translate)
+    const observer = new MutationObserver(updateDirByLang);
+    observer.observe(document.documentElement, { attributes: true, attributeFilter: ['lang'] });
+  </script>
+
+  <!-- Floating Translate Button and Widget -->
+  <button id="translate-toggle-btn" style="position:fixed;top:80px;right:24px;z-index:1050;background:rgba(0,113,197,0.7);color:white;border:none;border-radius:24px;padding:10px 18px;font-size:1.1rem;box-shadow:0 2px 8px rgba(0,0,0,0.12);cursor:pointer;transition:background 0.2s;">
+    <span style="vertical-align:middle;">🌐</span> <span style="vertical-align:middle;">Language</span>
+  </button>
+  <div id="translate-widget-container" style="display:none;position:fixed;top:120px;right:24px;z-index:1050;background:rgba(255,255,255,0.97);border-radius:12px;box-shadow:0 4px 24px rgba(0,0,0,0.18);padding:16px 20px;">
+    <div id="google_translate_element"></div>
+  </div>
+  <script>
+    const btn = document.getElementById('translate-toggle-btn');
+    const widget = document.getElementById('translate-widget-container');
+    btn.addEventListener('click', function() {
+      widget.style.display = widget.style.display === 'none' ? 'block' : 'none';
+    });
+    // Optional: Hide widget when clicking outside
+    document.addEventListener('click', function(e) {
+      if (!btn.contains(e.target) && !widget.contains(e.target)) {
+        widget.style.display = 'none';
+      }
+    });
+  </script>
+  <!-- Google Translate Widget Script (must be after the widget container) -->
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,ar,he,fa,ur,fr,es,de,zh,ru', // add/remove as needed
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element');
+    }
+  </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+  <!-- Enable flip on tap/click for mobile/touch -->
+  <script>
+    // Enable flip on tap/click for mobile/touch
+    document.querySelectorAll('.timeline-card').forEach(function(card) {
+      card.addEventListener('click', function(e) {
+        // Only trigger on touch/click, not on keyboard focus
+        if (window.innerWidth <= 768) {
+          // Prevent flipping when selecting text or focusing
+          if (e.target.closest('.timeline-card-inner')) {
+            card.classList.toggle('flipped');
+          }
+        }
+      });
+    });
   </script>
 </body>
 </html>
