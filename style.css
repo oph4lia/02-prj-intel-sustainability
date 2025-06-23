@@ -139,7 +139,8 @@ body {
 }
 
 .timeline-card {
-  flex: 0 0 350px;
+  flex: 0 0 450px;
+  min-width: 450px;
   scroll-snap-align: start;
   perspective: 1000px;
   cursor: pointer;
@@ -148,7 +149,8 @@ body {
 .timeline-card-inner {
   position: relative;
   width: 100%;
-  height: 400px;
+  height: 520px;
+  min-height: 520px;
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
@@ -275,13 +277,13 @@ body {
   }
   
   .timeline-card {
-    flex: none;
     width: 100%;
+    min-width: 0;
   }
   
   .timeline-card-inner {
+    min-height: 380px;
     height: auto;
-    min-height: 300px;
   }
   
   .education-grid {
